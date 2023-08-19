@@ -1,5 +1,4 @@
-
-vec3 palette( in float t, in vec3 a, in vec3 b, in vec3 c, in vec3 d ){
+const shaderFunctions = `vec3 palette( in float t, in vec3 a, in vec3 b, in vec3 c, in vec3 d ){
     return a + b*cos( 6.28318*(c*t+d) );
 }
 
@@ -23,4 +22,6 @@ float sdStar( in vec2 p, in float r, in int n, in float m){
   p -= r*acs;
   p += ecs*clamp( -dot(p,ecs), 0.0, r*acs.y/ecs.y);
   return length(p)*sign(p.x);
-}
+}`;
+
+export default shaderFunctions;
