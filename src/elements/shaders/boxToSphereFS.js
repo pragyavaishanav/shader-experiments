@@ -1,3 +1,7 @@
+const fragmentShader = `
+
+
+
 in vec2 vUv;
 uniform float u_time;
 // #include shaderFunctions;
@@ -45,3 +49,7 @@ void main() {
 
     gl_FragColor = vec4(color, 1.0);
 }
+
+`;
+
+export default fragmentShader;

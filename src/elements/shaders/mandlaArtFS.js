@@ -1,4 +1,4 @@
-in vec2 vUv;
+const fragmentShader = `in vec2 vUv;
 uniform float u_time;
 
 vec3 palette( in float t)
@@ -61,4 +61,6 @@ void main() {
   }
 
   gl_FragColor = vec4(finalColor, 1.0);
-}
+}`;
+
+export default fragmentShader;

@@ -1,4 +1,4 @@
-uniform float u_time;
+const vertexShader = `uniform float u_time;
 out vec2 vUv;
 void main() {
     float radius = 1.0;
@@ -7,4 +7,6 @@ void main() {
     vec3 pos = mix(position, v, delta);
     vUv = uv;
     gl_Position = projectionMatrix * modelViewMatrix * vec4(pos, 1.0);
-}
+}`;
+
+export default vertexShader;

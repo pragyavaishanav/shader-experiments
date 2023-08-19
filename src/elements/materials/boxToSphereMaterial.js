@@ -1,6 +1,6 @@
 import * as THREE from "three";
-import vertexShader from "../shaders/boxToSphere.vert";
-import fragmentShader from "../shaders/boxToSphere.frag";
+import vertexShader from "../shaders/boxToSphereVS.js";
+import fragmentShader from "../shaders/boxToSphereFS.js";
 
 console.log("vertexShader", vertexShader);
 console.log("fragmentShader", fragmentShader);
