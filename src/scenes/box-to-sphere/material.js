@@ -1,6 +1,6 @@
 import * as THREE from "three";
-import vertexShader from "./boxToSphereVS.js";
-import fragmentShader from "./boxToSphereFS.js";
+import vertexShader from "./vertex.js";
+import fragmentShader from "./fragment.js";
 
 const shaderMaterial = new THREE.ShaderMaterial({
   wireframe: true,

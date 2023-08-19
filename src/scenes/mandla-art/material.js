@@ -1,6 +1,6 @@
 import * as THREE from "three";
-import vertexShader from "./mandlaArtVS.js";
-import fragmentShader from "./mandlaArtFS.js";
+import vertexShader from "./vertex.js";
+import fragmentShader from "./fragment.js";
 
 const shaderMaterial = new THREE.ShaderMaterial({
   // wireframe: true,
