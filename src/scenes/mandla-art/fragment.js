@@ -23,12 +23,12 @@ void main() {
 
   float d = sdStar(uv, 1., 4, 10.)* exp(-length(uv0));
 
-  vec3 color = paletteRainbow(length(uv0) + i*.4 + u_time *2.);
+  vec3 color = paletteFire(length(uv0) + i*.4 + u_time *2.);
 
 
   d= sin(d * 15. + u_time * 3.)/15.; 
   d = abs(d);
-  d= pow(0.01/d,1.2);
+  d= pow(0.005/d,1.2);
 
   color *= d;
   finalColor += color;

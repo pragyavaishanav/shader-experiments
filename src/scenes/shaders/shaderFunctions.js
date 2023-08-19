@@ -10,6 +10,14 @@ vec3 paletteRainbow(in float t){
   return palette(t, a, b, c, d);
 }
 
+vec3 paletteFire(in float t){
+  vec3 a = vec3(0.5, 0.5, 0.5);
+  vec3 b = vec3(0.5, 0.5, 0.5);
+  vec3 c = vec3(1.0, 1.0, 0.5);
+  vec3 d = vec3(0.80, 0.90, 0.30);
+  return palette(t, a, b, c, d);
+}
+
 float sdStar( in vec2 p, in float r, in int n, in float m){
   // next 4 lines can be precomputed for a given shape
   float an = 3.141593/float(n);
