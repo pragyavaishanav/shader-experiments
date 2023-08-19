@@ -4,7 +4,13 @@ import Model from "./elements/box-to-sphere/Model";
 
 function App() {
   return (
-    <Canvas camera={{ position: [0, 0, 5] }}>
+    <Canvas
+      // colorManagement={false}
+      onCreated={({ gl }) => {
+        gl.setClearColor("black");
+      }}
+      // camera={{ position: [0, 0, 5] }}
+    >
       <ambientLight />
       <Model />
       <OrbitControls />
