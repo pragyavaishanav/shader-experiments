@@ -1,4 +1,4 @@
-import shaderMaterial from "../materials/mandlaArtMaterial";
+import shaderMaterial from "./mandlaArtMaterial";
 import { useFrame } from "@react-three/fiber";
 import { OrthographicCamera } from "@react-three/drei";
 

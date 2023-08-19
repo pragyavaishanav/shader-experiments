@@ -1,15 +1,13 @@
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-import Model from "./elements/components/BoxToSphere";
+import Model from "./scenes/box-to-sphere/BoxToSphere";
 
 function App() {
   return (
     <Canvas
-      // colorManagement={false}
       onCreated={({ gl }) => {
         gl.setClearColor("black");
       }}
-      // camera={{ position: [0, 0, 5] }}
     >
       <ambientLight />
       <Model />

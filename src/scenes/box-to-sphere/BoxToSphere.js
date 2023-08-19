@@ -1,4 +1,4 @@
-import shaderMaterial from "../materials/boxToSphereMaterial";
+import shaderMaterial from "./boxToSphereMaterial";
 import { useFrame } from "@react-three/fiber";
 
 const Model = () => {

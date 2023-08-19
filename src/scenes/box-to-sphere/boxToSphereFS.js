@@ -1,4 +1,4 @@
-import shaderFunctions from "../shaderFunctions";
+import shaderFunctions from "../shaders/shaderFunctions";
 const fragmentShader = ` ${shaderFunctions}
 in vec2 vUv;
 uniform float u_time;
