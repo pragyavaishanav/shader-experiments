@@ -1,6 +1,5 @@
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
-import Model from "./scenes/mandla-art/MandlaArt";
+import Model from "./scenes/fractals/Model";
 
 function App() {
   return (
@@ -11,7 +10,6 @@ function App() {
     >
       <ambientLight />
       <Model />
-      <OrbitControls />
       <directionalLight position={[0, 10, 5]} intensity={1} />
     </Canvas>
   );
