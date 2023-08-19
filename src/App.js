@@ -1,6 +1,6 @@
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-import Model from "./scenes/box-to-sphere/BoxToSphere";
+import Model from "./scenes/mandla-art/MandlaArt";
 
 function App() {
   return (

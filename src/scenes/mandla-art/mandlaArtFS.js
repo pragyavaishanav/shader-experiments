@@ -3,9 +3,12 @@ const fragmentShader = `${shaderFunctions}
 
 in vec2 vUv;
 uniform float u_time;
+uniform vec2 u_resolution;
 
 void main() {
   vec2 uv = vUv;
+  uv.x *= u_resolution.x / u_resolution.y; // Correct the aspect ratio
+  uv.x -= (u_resolution.x - u_resolution.y) / u_resolution.y / 2.0; // Center the image
   uv = uv -0.5;
   uv = uv * 2.0;
   vec2 uv0 = uv;
