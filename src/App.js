@@ -1,5 +1,5 @@
 import { Canvas } from "@react-three/fiber";
-import Model from "./scenes/fractals/Model";
+import Model from "./scenes/unwrap-uv/Model";
 
 function App() {
   return (
