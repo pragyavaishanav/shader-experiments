@@ -6,7 +6,8 @@ import { useMemo } from "react";
 import UnwrapUv from "./UnwrapUv";
 
 const Model = () => {
-  const gltf = useGLTF("/assets/bibimbap3.glb");
+  // const gltf = useGLTF("/assets/bibimbap3.glb");
+  const gltf = useGLTF("/assets/lee_perry.glb");
 
   useMemo(() => {
     gltf.scene.name = "sourceImage";

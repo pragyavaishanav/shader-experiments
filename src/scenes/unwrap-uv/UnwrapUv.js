@@ -20,8 +20,6 @@ const UnwrapUv = () => {
     const cScene = duplicateSceneWithSource(scene);
     const camera = createOrthoCamera();
 
-    shaderMaterial.uniforms.near.value = 1.0; // This line throws an error
-
     gl.setClearColor(0xff00ff);
     gl.setRenderTarget(target);
     updateSceneMaterial(cScene, shaderMaterial);
