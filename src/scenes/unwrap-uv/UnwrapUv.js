@@ -8,7 +8,7 @@ import {
 import { useMemo } from "react";
 import { useThree } from "@react-three/fiber";
 import * as THREE from "three";
-import BakeShaderMaterial from "./material";
+import BakeShaderMaterial from "./BakeShaderMaterial";
 
 const UnwrapUv = () => {
   const { scene, gl } = useThree();
