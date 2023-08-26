@@ -1,0 +1,119 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "prettier",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react-hooks/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "requireConfigFile": false,
+    "sourceType": "module"
+    //    "project": "./tsconfig.json"
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "prefer-arrow",
+    "react",
+    "import",
+    "react-hooks",
+  ],
+  "ignorePatterns": [
+    "node_modules/"
+  ],
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+      // "detect" automatically picks the version you have installed.
+    }
+  },
+  "overrides": [
+    {
+      "files": [
+        "*.jsx",
+        "*.js",
+        "*.tsx",
+        "*.ts"
+      ]
+    }
+  ],
+  "rules": {
+    "max-lines-per-function": [
+      "error",
+      60
+    ],
+    "react/react-in-jsx-scope": "off",
+    "prefer-arrow-callback": [
+      "error",
+      {
+        "allowNamedFunctions": true
+      }
+    ],
+    "func-style": [
+      "error",
+      "expression",
+      {
+        "allowArrowFunctions": true
+      }
+    ],
+    "prefer-const": [
+      "error",
+      {
+        "destructuring": "any",
+        "ignoreReadBeforeAssign": false
+      }
+    ],
+    "no-var": [
+      "error"
+    ],
+    "react/prop-types": [
+      "off"
+    ],
+    "max-len": [
+      "error",
+      {
+        "code": 100,
+        "tabWidth": 4
+      }
+    ],
+    "keyword-spacing": [
+      "error"
+    ],
+    "space-before-blocks": [
+      "error"
+    ],
+    "prefer-template": [
+      "error"
+    ],
+    "no-useless-concat": [
+      "error"
+    ],
+    "quotes": [
+      "error",
+      "double"
+    ],
+    "camelcase": [
+      "error",
+      {
+        "properties": "never"
+      }
+    ],
+    "@typescript-eslint/no-empty-function": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      {
+        "argsIgnorePattern": "^_"
+      }
+    ]
+  }
+}
